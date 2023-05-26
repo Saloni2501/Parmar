@@ -1,0 +1,16 @@
+Python Program to find sum of array
+ 
+ def array_sum(arr):
+    sum = 0
+    for num in arr:
+        sum += num
+    return sum
+array = [1, 2, 3, 4, 5]
+result = array_sum(array)
+print("Array:", array)
+print("Sum:", result)
+
+
+OUTPUT:-
+                Array: [1, 2, 3, 4, 5]
+Sum: 15
