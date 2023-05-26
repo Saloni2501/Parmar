@@ -1,0 +1,24 @@
+def find_smallest_largest(numbers):
+    if not numbers:
+        return None, None
+    smallest = largest = numbers[0]
+    for num in numbers:
+        if num < smallest:
+            smallest = num
+        if num > largest:
+            largest = num
+
+    return smallest, largest
+number_list = [5, 2, 8, 3, 1, 9, 4, 7, 6]
+
+smallest_num, largest_num = find_smallest_largest(number_list)
+
+print("Number List:", number_list)
+print("Smallest Number:", smallest_num)
+print("Largest Number:", largest_num )
+
+
+OUTPUT:-
+  Number List: [5, 2, 8, 3, 1, 9, 4, 7, 6]
+Smallest Number: 1
+Largest Number: 9
