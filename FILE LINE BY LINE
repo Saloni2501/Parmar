@@ -1,0 +1,22 @@
+Write a python program to Read a file line by line and print it
+
+
+def read_file(filename):
+    try:
+        with open(filename, 'r') as file :
+            for line in file:
+                print(line.rstrip())
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+filename = input("Enter the name of the file: ")
+read_file(filename)
+
+
+
+OUTPUT
+   Enter the name of the file: example.txt
+This is line 1.
+This is line 2.
+This is line 3..........
+
+
