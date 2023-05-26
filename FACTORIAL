@@ -1,0 +1,19 @@
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+num=int(input("enter the number"))
+if num<0:
+    print("factorial is not defined")
+    result=factorial(n)
+else:
+    print("the factorial of n is",result)
+    
+    
+    OUTPUT:-
+         
+          enter the number 5
+          the factorial of 5 is 120 
+           enter the number 6
+          the factorial of 6 is 720
